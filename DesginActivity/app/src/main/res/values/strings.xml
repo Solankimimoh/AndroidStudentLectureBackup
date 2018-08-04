@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DesginActivity</string>
+    <string name="btnname">BTN</string>
+    <string name="name">Enter your Name</string>
+    <string name="mymsg">This is Simple Text message</string>
+</resources>

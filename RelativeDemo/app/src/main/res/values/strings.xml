@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RelativeDemo</string>
+    <string name="btn_name">Btn</string>
+</resources>

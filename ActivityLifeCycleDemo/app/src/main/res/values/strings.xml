@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivityLifeCycleDemo</string>
+    <string name="strvar">Hello I am Text View</string>
+</resources>

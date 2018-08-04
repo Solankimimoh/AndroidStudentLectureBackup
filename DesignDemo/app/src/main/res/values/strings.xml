@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DesignDemo</string>
+    <string name="screen_greeting">Hello Welcome</string>
+    <string name="name">Enter Your Name</string>
+</resources>
