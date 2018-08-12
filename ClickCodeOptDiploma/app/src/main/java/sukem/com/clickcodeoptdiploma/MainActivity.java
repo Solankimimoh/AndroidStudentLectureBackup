@@ -7,8 +7,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener
+        , View.OnLongClickListener {
 
     private Button plusBtn;
     private Button minusBtn;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //        listener init
         plusBtn.setOnClickListener(this);
         minusBtn.setOnClickListener(this);
+        minusBtn.setOnLongClickListener(this);
 
     }
 
@@ -58,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
     private void increaseTextSize() {
         textSize++;
         nameTv.setTextSize(textSize);
@@ -68,5 +70,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void decreaseTextSize() {
         textSize--;
         nameTv.setTextSize(textSize);
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        Toast.makeText(this, "HELLO", Toast.LENGTH_SHORT).show();
+        return true;
     }
 }
