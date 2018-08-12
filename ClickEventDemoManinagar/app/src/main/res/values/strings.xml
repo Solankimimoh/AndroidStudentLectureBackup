@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ClickEventDemoManinagar</string>
+    <string name="btnname">btn</string>
+    <string name="name">Enter your name</string>
+</resources>
