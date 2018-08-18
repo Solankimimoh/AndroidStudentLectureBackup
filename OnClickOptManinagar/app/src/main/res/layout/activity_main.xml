@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/activity_main_sample_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sample"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/activity_main_increase_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_sample_tv"
+        android:text="@string/increase" />
+
+
+    <Button
+        android:id="@+id/activity_main_decrease_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/activity_main_sample_tv"
+        android:text="@string/decrease" />
+
+
+    <Button
+        android:id="@+id/activity_main_red_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/redbg" />
+
+    <Button
+        android:id="@+id/activity_main_green_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/activity_main_red_btn"
+        android:text="@string/green" />
+
+
+    <Button
+        android:id="@+id/activity_main_blue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/activity_main_red_btn"
+        android:text="@string/blue" />
+
+</RelativeLayout>

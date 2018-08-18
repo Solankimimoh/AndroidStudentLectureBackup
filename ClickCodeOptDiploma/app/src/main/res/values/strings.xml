@@ -2,4 +2,7 @@
     <string name="app_name">ClickCodeOptDiploma</string>
     <string name="sizePlus">+</string>
     <string name="sizeMinus">-</string>
+    <string name="greeting">hii. how are you yash. today i am good yash. what about you yash.
+i hope you got my message yash. so finally we are best friend yash.</string>
+    <string name="name">enter your name</string>
 </resources>

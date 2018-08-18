@@ -1,21 +1,27 @@
 package sukem.com.clickcodeoptdiploma;
 
+import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
         , View.OnLongClickListener {
+
 
     private Button plusBtn;
     private Button minusBtn;
     private TextView nameTv;
     private float textSize;
+    private EditText nameEd;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,14 +37,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         plusBtn = findViewById(R.id.activity_main_plus_btn);
         minusBtn = findViewById(R.id.activity_main_minus_btn);
         nameTv = findViewById(R.id.activity_main_name_tv);
+        nameEd = findViewById(R.id.activity_main_name_ed);
 
         textSize = nameTv.getTextSize();
         nameTv.setTextSize(textSize);
+
 
         //        listener init
         plusBtn.setOnClickListener(this);
         minusBtn.setOnClickListener(this);
         minusBtn.setOnLongClickListener(this);
+        final String greeting = getString(R.string.greeting);
+        nameTv.setText(R.string.greeting);
+
+
+    }
+
+    private void replaceString() {
+        final String greeting = getString(R.string.greeting);
+        nameTv.setText(R.string.greeting);
+
+
+        nameTv.setText(greeting.replace("yash", nameEd.getText().toString()));
+
 
     }
 
@@ -50,7 +71,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.activity_main_plus_btn:
-                increaseTextSize();
+                replaceString();
+//                increaseTextSize();
                 break;
 
             case R.id.activity_main_minus_btn:
@@ -62,8 +84,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void increaseTextSize() {
+
+        Random random = new Random();
+        int color = Color.argb(random.nextInt(256), random.nextInt(256), random.nextInt(256), random.nextInt(256));
+        nameTv.setTextColor(color);
+
         textSize++;
         nameTv.setTextSize(textSize);
+
 
     }
 

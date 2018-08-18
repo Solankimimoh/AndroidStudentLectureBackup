@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OnClickOptManinagar</string>
+    <string name="sample">Hello</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="redbg">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+</resources>
