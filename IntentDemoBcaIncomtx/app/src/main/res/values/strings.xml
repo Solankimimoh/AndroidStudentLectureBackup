@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IntentDemoBcaIncomtx</string>
+    <string name="gotohome">Go To home activity</string>
+    <string name="welcom">Welcome To Home Activity :)</string>
+</resources>

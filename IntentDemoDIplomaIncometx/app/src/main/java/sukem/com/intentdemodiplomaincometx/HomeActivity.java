@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private void changeTextColor() {
 
         Random random = new Random();
+//        Color.argb(120,200,210,156);
         int color = Color.argb(random.nextInt(256), random.nextInt(256), random.nextInt(256), random.nextInt(256));
         int bgColor = Color.argb(random.nextInt(256), random.nextInt(256), random.nextInt(256), random.nextInt(256));
         sampleTv.setTextColor(color);
