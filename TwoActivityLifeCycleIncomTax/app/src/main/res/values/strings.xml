@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TwoActivityLifeCycleIncomTax</string>
+    <string name="btnname">Go to Second</string>
+    <string name="secondactivity">Second Activity Here</string>
+</resources>

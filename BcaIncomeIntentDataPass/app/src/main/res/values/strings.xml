@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BcaIncomeIntentDataPass</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="mobile">Enter your Mobile</string>
+    <string name="sbmt">Submit</string>
+    <string name="loginscreen">Login</string>
+</resources>
