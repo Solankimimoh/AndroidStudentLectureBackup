@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IntenetDataPassDiploma</string>
+    <string name="email">Enter Your Email</string>
+    <string name="pwd">Enter Your Password</string>
+    <string name="login">Login</string>
+    <string name="frgtpwd">Forgot Password?</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DesignCompBCAIncomTax</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dance">Dance</string>
+    <string name="sport">Sport</string>
+</resources>
