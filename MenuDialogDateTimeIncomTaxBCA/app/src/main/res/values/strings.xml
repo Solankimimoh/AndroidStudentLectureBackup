@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MenuDialogDateTimeIncomTaxBCA</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="dialog">Open Dialog</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+</resources>

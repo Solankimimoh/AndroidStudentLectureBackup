@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SeekBarDateTimePickerMenuManinagar</string>
+    <string name="dance">Dance</string>
+    <string name="sport">Sport</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="setting">Settings</string>
+    <string name="about">About</string>
+    <string name="contact">Contact</string>
+</resources>
