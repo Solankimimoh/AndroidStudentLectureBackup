@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DesignnRevisionManinagar</string>
+    <string name="email">Enter Your Name</string>
+    <string name="login">Login</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+</resources>
