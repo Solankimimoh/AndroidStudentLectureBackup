@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DateTimePickerMenuDiploma</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+</resources>
