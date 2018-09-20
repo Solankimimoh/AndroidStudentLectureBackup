@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StyleThemeManinagarMenu</string>
+    <string name="menu">PopUpMenu - Context Menu</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="setting">Setting</string>
+    <string name="moto">Way you starting to learn</string>
+</resources>

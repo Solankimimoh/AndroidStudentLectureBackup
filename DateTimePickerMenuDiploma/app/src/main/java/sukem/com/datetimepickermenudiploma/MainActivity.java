@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -18,6 +20,7 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = MainActivity.class.getSimpleName();
     private EditText dateEd;
     private EditText timeEd;
     private Button dateBtn;
@@ -28,12 +31,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int mHour;
     private int mMinute;
 
+
+    private SeekBar colorSeekBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initView();
+
+        colorSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                Log.e(TAG, "onProgressChanged: "+progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                Log.e(TAG, "onStartTrackingTouch: ");
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Log.e(TAG, "onStopTrackingTouch: ");
+            }
+        });
 
     }
 
@@ -42,6 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dateBtn = findViewById(R.id.activity_main_date_btn);
         timeEd = findViewById(R.id.activity_main_time_ed);
         timeBtn = findViewById(R.id.activity_main_time_btn);
+
+        colorSeekBar = findViewById(R.id.activity_main_color_sk);
 
         timeBtn.setOnClickListener(this);
         dateBtn.setOnClickListener(this);
@@ -121,7 +146,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        getMenuInflater().inflate(R.menu.home_menu,menu);
+        getMenuInflater().inflate(R.menu.home_menu, menu);
         super.onCreateContextMenu(menu, v, menuInfo);
     }
 
