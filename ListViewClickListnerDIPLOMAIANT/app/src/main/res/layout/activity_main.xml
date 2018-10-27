@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ListView
+    tools:listitem="@layout/row_layout"
+    android:id="@+id/userlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <!--<Spinner-->
+        <!--android:spinnerMode="dialog"-->
+        <!--android:prompt="@string/selectName"-->
+        <!--android:id="@+id/personspinner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:listitem="@layout/row_layout" />-->
+
+</RelativeLayout>
